@@ -1,0 +1,81 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>Welcome / Project</title>
+
+  <!-- Meta tags -->
+  <meta name="description" content="">
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="Copyright" content="" />
+
+  <!-- Mobile Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="HandheldFriendly" content="true">
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+
+  <!-- Internet Explore -->
+  <meta http-equiv="cleartype" content="on">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="resources/common/css/reset.css" />
+  <link rel="stylesheet" href="resources/common/css/common.css" />
+
+  <!-- Modernizr v2.7.2-->
+  <script src="resources/common/js/libs/modernizr-2.7.2.js"></script>
+
+  <!-- Application-specific meta tags -->
+  <!-- Open Graph protocol -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+</head>
+<body>
+  <div class="wrapper">
+
+  </div>
+
+<!-- jQuery - 2.0 for modern browsers, 1.10 for .oldie -->
+<script>
+  var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+  if(!oldieCheck) {
+    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>"><\/script>');
+  } else {
+    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"><\/script>');
+  }
+</script>
+<script>
+  if(!window.jQuery) {
+    if(!oldieCheck) {
+      document.write('<script src="resources/common/js/libs/jquery-2.1.0.min.js"></script>');
+    } else {
+      document.write('<script src="resources/common/js/libs/jquery-1.11.1.min.js');
+    }
+  }
+</script>
+
+<!-- respond and selectivizr v.1.0.2 for old IE -->
+<!--[if (lt IE 9) & (!IEMobile)]>
+  <script src="resources/common/js/libs/respond.js"></script>
+  <script src="resources/common/js/libs/selectivizr-min.js"></script>
+<![endif]-->
+<script src="resources/common/js/common.js"></script>
+</body>
+</html>
