@@ -1,0 +1,110 @@
+/* 
+font-family: 'Anonymous Pro', monospace;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/* RESET */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* RESET END */
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+
+  background: #020202;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+}
+
+.sidebar {
+  flex-basis: 320px;
+  padding: 4rem 0;
+
+  background: #fff;
+  color: #2e2e2e;
+}
+
+.sidebar_inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 4rem 0;
+
+  color: #f0f0f0;
+}
+
+.main a {
+  color: #f0f0f0;
+}
+
+.logo {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.section {
+  width: 80%;
+  margin: 0 auto;
+}
+  .section-home {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+.section_header {
+  display: inline-block;
+  position: sticky;
+  top: 1rem;
+  margin: 0 0 5rem 0;
+  padding: 1rem;
+
+  font: 400 3rem 'Anonymous Pro', monospace;
+  color: #020202;
+
+  background: #ffff;
+}
+
+.projects {
+  display: flex;
+}
+
+.project {
+  padding: 2.5rem;
+  background: #161616;
+  border: 1px solid #333333;
+}
+
+.project_title {
+  text-transform: uppercase;
+}
+
+.project_desc,
+.project_actions {
+  margin: 1rem 0 0 0;
+}
