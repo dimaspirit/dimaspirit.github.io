@@ -107,4 +107,6 @@ img {
 .project_desc,
 .project_actions {
   margin: 1rem 0 0 0;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
