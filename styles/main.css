@@ -80,6 +80,7 @@ img {
   color: #bababa;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 400;
 }
   .nav_link:hover {
     color: #757575;
@@ -100,6 +101,7 @@ img {
   font-family: 'Anonymous Pro', monospace;
   font-size: 2.5rem;
   font-weight: 700;
+  line-height: .7;
 }
 
 .section {
