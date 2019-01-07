@@ -32,7 +32,7 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 ol, ul {
@@ -52,7 +52,7 @@ img {
   background: #020202;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem;
-  line-height: 1.4;
+  line-height: 1.5;
   letter-spacing: .8px;
 }
 
@@ -68,6 +68,22 @@ img {
   width: 80%;
   margin: 0 auto;
 }
+
+.nav {
+  margin: 2rem 0;
+}
+
+.nav_link {
+  display: block;
+  padding: .5rem 0;
+
+  color: #bababa;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+  .nav_link:hover {
+    color: #757575;
+  }
 
 .main {
   flex-grow: 1;
