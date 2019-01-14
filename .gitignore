@@ -6,9 +6,18 @@ yarn-debug.log*
 yarn-error.log*
 
 # Dependency directories
-node_modules/
+node_modules
 
-# OS generated files #
-######################
+# OS
 .DS_Store
 Thumbs.db
+.Trashes
+
+## Sass
+.sass-cache
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

@@ -1,7 +1,12 @@
-/* 
+/*
 font-family: 'Anonymous Pro', monospace;
 font-family: 'Open Sans', sans-serif;
 */
+
+:root {
+  --bg-color: #020202;
+  --cont-width: 80%;
+}
 
 .google {
   color: #ea4335 !important;
@@ -23,6 +28,8 @@ font-family: 'Open Sans', sans-serif;
 html {
   box-sizing: border-box;
   font-size: 10px;
+
+  background: var(--bg-color);
 }
 
 *, *:before, *:after {
@@ -47,44 +54,56 @@ img {
 
 .wrapper {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
 
-  background: #020202;
+  background: var(--bg-color);
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem;
-  line-height: 1.5;
+  line-height: 1.4;
   letter-spacing: .8px;
 }
 
-.sidebar {
-  flex-basis: 320px;
-  padding: 4rem 0;
+.header {
+  padding: 2rem 0;
 
   background: #fff;
   color: #2e2e2e;
 }
 
-.sidebar_inner {
-  width: 80%;
+.header_inner {
+  width: var(--cont-width);
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .nav {
-  margin: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
 }
 
-.nav_link {
+.nav_item {
   display: block;
-  padding: .5rem 0;
+  padding: 1rem 2rem;
 
   color: #bababa;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
 }
-  .nav_link:hover {
+  .nav_item:hover {
     color: #757575;
   }
+
+@media only screen and (min-width: 620px) {
+  .header_inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .main {
   flex-grow: 1;
@@ -98,10 +117,12 @@ img {
 }
 
 .logo {
+  align-self: center;
+
   font-family: 'Anonymous Pro', monospace;
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: .7;
+  line-height: .8;
 }
 
 .section {
