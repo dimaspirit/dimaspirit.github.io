@@ -79,10 +79,22 @@ img {
   flex-direction: column;
 }
 
+.logo {
+  align-self: center;
+
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: .8;
+
+  margin: .5rem 0;
+}
+
 .nav {
   display: flex;
   justify-content: space-evenly;
-  margin: 1rem 0;
+
+  margin: .5rem 0;
 }
 
 .nav_item {
@@ -106,9 +118,7 @@ img {
 }
 
 .main {
-  flex-grow: 1;
-  padding: 4rem 0;
-
+  padding: 5rem 0;
   color: #f0f0f0;
 }
 
@@ -116,23 +126,10 @@ img {
   color: #f0f0f0;
 }
 
-.logo {
-  align-self: center;
-
-  font-family: 'Anonymous Pro', monospace;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: .8;
-}
-
 .section {
-  width: 80%;
-  margin: 0 auto 5rem;
+  width: var(--cont-width);
+  margin: 0 auto 4rem;
 }
-  .section-home {
-    text-align: center;
-    font-size: 3rem;
-  }
 
 .section_header {
   display: inline-block;
