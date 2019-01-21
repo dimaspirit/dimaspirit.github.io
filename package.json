@@ -1,0 +1,30 @@
+{
+  "name": "dimaspirit.github.io",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimaspirit/dimaspirit.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimaspirit/dimaspirit.github.io/issues"
+  },
+  "homepage": "https://github.com/dimaspirit/dimaspirit.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.5",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.8",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "postcss-import": "^12.0.1"
+  },
+  "dependencies": {}
+}

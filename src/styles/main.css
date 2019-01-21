@@ -1,56 +1,26 @@
 /*
+FONTS:
 font-family: 'Anonymous Pro', monospace;
 font-family: 'Open Sans', sans-serif;
+
+
 */
+
+@import "./reset.css";
+
+@import "./brandcolors";
+
+
 
 :root {
   --bg-color: #020202;
   --cont-width: 80%;
 }
 
-.google {
-  color: #ea4335 !important;
-}
-
-.twitch {
-  color: #6441a5 !important;
-}
-
-.twitter {
-  color: #1da1f2 !important;
-}
-
-.instagram {
-  color: #405de6 !important;
-}
-
-/* RESET */
 html {
-  box-sizing: border-box;
   font-size: 10px;
-
   background: var(--bg-color);
 }
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: 300;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-/* RESET END */
 
 .wrapper {
   display: flex;
@@ -146,13 +116,35 @@ img {
 
 .projects {
   display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 620px) {
+  .projects {
+    flex-direction: row;
+  }
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   padding: 2.5rem;
   background: #161616;
   border: 1px solid #333333;
+
+  margin: 0 0 2rem 0;
 }
+  .project:last-child {
+    margin-right: 0;
+  }
+@media only screen and (min-width: 620px) {
+  .project {
+    margin: 0 2rem 0 0;
+  }
+  .project:last-child {
+    margin-bottom: 0;
+  }
+}
+
 
 .project_title {
   text-transform: uppercase;
@@ -164,3 +156,9 @@ img {
   line-height: 1.5;
   letter-spacing: 1px;
 }
+
+.project_actions {
+  align-self: flex-end;
+  margin: auto 0 0 0;
+}
+
