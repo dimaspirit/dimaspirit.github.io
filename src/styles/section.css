@@ -1,0 +1,21 @@
+.section {
+  width: var(--cont-width);
+  margin: 0 auto 4rem;
+}
+
+.section_header {
+  display: inline-block;
+  position: sticky;
+  top: 1rem;
+  margin: 0 0 3rem 0;
+  padding: 1rem;
+
+  font: 400 3rem 'Anonymous Pro', monospace;
+  color: #020202;
+
+  background: #ffff;
+}
+
+.section_description {
+  margin: 0 0 2rem 0;
+}

@@ -1,0 +1,27 @@
+:root {
+  --bg-color: #020202;
+  --cont-width: 80%;
+
+  --font-color: #8c8c8c;
+
+  --section-margin: 4rem;
+  --header-margin: 3rem;
+}
+
+html {
+  font-size: 10px;
+  background: var(--bg-color);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  background: var(--bg-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  letter-spacing: .8px;
+}
+

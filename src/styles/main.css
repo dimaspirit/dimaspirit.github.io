@@ -3,89 +3,16 @@ FONTS:
 font-family: 'Anonymous Pro', monospace;
 font-family: 'Open Sans', sans-serif;
 
-
+Colors scheme: https://coolors.co/25ced1-fceade-020202-ff8a5b-ea526f
 */
 
 @import "./reset.css";
+@import "./brandcolors.css";
 
-@import "./brandcolors";
+@import "./root.css";
 
-
-
-:root {
-  --bg-color: #020202;
-  --cont-width: 80%;
-}
-
-html {
-  font-size: 10px;
-  background: var(--bg-color);
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
-  background: var(--bg-color);
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  letter-spacing: .8px;
-}
-
-.header {
-  padding: 2rem 0;
-
-  background: #fff;
-  color: #2e2e2e;
-}
-
-.header_inner {
-  width: var(--cont-width);
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.logo {
-  align-self: center;
-
-  font-family: 'Anonymous Pro', monospace;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: .8;
-
-  margin: .5rem 0;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-evenly;
-
-  margin: .5rem 0;
-}
-
-.nav_item {
-  display: block;
-  padding: 1rem 2rem;
-
-  color: #bababa;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-  .nav_item:hover {
-    color: #757575;
-  }
-
-@media only screen and (min-width: 620px) {
-  .header_inner {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
+@import "./header.css";
+@import "./section.css";
 
 .main {
   padding: 5rem 0;
@@ -94,24 +21,6 @@ html {
 
 .main a {
   color: #f0f0f0;
-}
-
-.section {
-  width: var(--cont-width);
-  margin: 0 auto 4rem;
-}
-
-.section_header {
-  display: inline-block;
-  position: sticky;
-  top: 1rem;
-  margin: 0 0 3rem 0;
-  padding: 1rem;
-
-  font: 400 3rem 'Anonymous Pro', monospace;
-  color: #020202;
-
-  background: #ffff;
 }
 
 .projects {

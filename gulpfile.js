@@ -1,8 +1,8 @@
 const { src, dest, watch, series } = require('gulp');
 
-const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
 const atImport = require('postcss-import');
 
 const browsersync = require('browser-sync').create();
@@ -37,6 +37,8 @@ function serve() {
 
 function start(cb) {
   watch(paths.styles.src, styles);
+  watch('./index.html').on('change', browsersync.reload);
+
   cb();
 }
 
