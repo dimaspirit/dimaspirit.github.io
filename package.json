@@ -2,8 +2,8 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel --dist-dir docs",
+    "build": "parcel build --dist-dir docs"
   },
   "devDependencies": {
     "parcel": "^2.12.0"
