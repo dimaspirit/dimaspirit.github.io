@@ -1,0 +1,12 @@
+{
+    "short_name": "DL",
+    "name": "Dmytro Lobanov personal site",
+    "icons": [{
+      "src": "favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }],
+    "start_url": "/?utm_source=homescreen",
+    "background_color": "#323335",
+    "theme_color": "#323335"
+  }
