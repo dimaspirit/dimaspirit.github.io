@@ -2,6 +2,7 @@ body {
   font-optical-sizing: auto;
   color: #323335;
   background: #fafafa;
+  margin: 0;
   font-family: Nunito, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -35,8 +36,10 @@ body {
 .nav-list {
   justify-content: center;
   margin: 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
+  overflow-x: auto;
 }
 
 .nav-list-item {
@@ -53,5 +56,58 @@ body {
 
 .nav-list-item:hover {
   background: #e4e2e3;
+}
+
+.section {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.timeline {
+  padding: 0 0 0 12px;
+  position: relative;
+}
+
+.timeline:after {
+  content: "";
+  background-color: #a4a4a4;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2px;
+}
+
+.project {
+  color: #323335;
+  background: #efefef;
+  border-radius: 8px;
+  max-width: 480px;
+  padding: 12px;
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.project-company {
+  color: #4d4f51;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.project-position {
+  color: #323335;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-heading {
+  color: #696b6e;
+  text-transform: uppercase;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=index.fcf714d7.css.map */

@@ -2,7 +2,7 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel --dist-dir docs",
+    "start": "parcel --dist-dir docs --no-cache",
     "build": "parcel build --dist-dir docs"
   },
   "devDependencies": {

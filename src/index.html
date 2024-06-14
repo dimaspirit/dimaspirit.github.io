@@ -32,7 +32,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="section">
       <p class="hi">Hi there, I am</p>
       <h1 class="title">Dmytro Lobanov</h1>
       <h2 class="position">Javascript engineer, Frontend developer & UI designer</h2>
@@ -53,7 +53,7 @@
       </ul>
     </nav>
 
-    <main>
+    <main class="section">
       <section>
         <h3 id="introduction">Introduction</h3>
         <p>I am a software engineer with over 10 years of commercial experience and a UI/UX designer with one year of experience, adept at creating responsive, user-centered services. Proficient in HTML, CSS, JavaScript, and modern frameworks such as Vue.js and React, also have experience working with React Native.</p>
@@ -74,20 +74,22 @@
 
       <section>
         <h3 id="experience">Experience</h3>
-        <article>
-          <h4>Team International</h4>
-          <p><time datetime="2018-07-01">Jul. 2018</time> - PRESENT</p>
-
-          <section>
-            <h5>Risma System A/S</h6>
-            <h4>Frontend developer</h4>
-            <h6>Tools &  Technologies</h6>
-            <p>Docker, Javascript, Vue.js, Vue-test-utils + Jest, Webpack, React-Native, Expo, Git,  Jira, Kanban. </p>
-
-            <h6>Duties</h6>
-            <p>Write tech tasks based on a user story, develop new features, participate in daily meetings, and optimize and improve existing features. Made MVP application (React-Native) for access to services in read mode. </p>
-          </section>
-        </article>
+        <div class="timeline">
+          <article>
+            <h4>Team International</h4>
+            <p><time datetime="2018-07-01">Jul. 2018</time> - PRESENT</p>
+  
+            <section class="project">
+              <h5 class="project-company">Risma System A/S</h6>
+              <h4 class="project-position">Frontend developer</h4>
+              <h6 class="project-heading">Tools &  Technologies</h6>
+              <p>Docker, Javascript, Vue.js, Vue-test-utils + Jest, Webpack, React-Native, Expo, Git,  Jira, Kanban. </p>
+  
+              <h6 class="project-heading">Duties</h6>
+              <p>Write tech tasks based on a user story, develop new features, participate in daily meetings, and optimize and improve existing features. Made MVP application (React-Native) for access to services in read mode. </p>
+            </section>
+          </article>
+        </div>
       </section>
     </div>
   </body>
