@@ -1,6 +1,6 @@
 body {
   font-optical-sizing: auto;
-  color: #323335;
+  color: #262626;
   background: #fafafa;
   margin: 0;
   font-family: Nunito, sans-serif;
@@ -8,24 +8,77 @@ body {
   font-weight: 400;
 }
 
-.hi {
-  font-optical-sizing: auto;
-  font-family: Roboto Mono, monospace;
-  font-style: normal;
-  font-weight: 500;
+.header {
+  padding: 36px 0 48px;
+  display: flex;
 }
 
-.title {
-  font-family: Rubik Mono One, monospace;
-  font-style: normal;
+.header-avatar {
+  width: 180px;
+  padding: 0 24px 0 0;
+}
+
+.header-hi {
+  font-family: IBM Plex Mono, monospace;
+  font-size: 16px;
   font-weight: 400;
 }
 
-.position {
+.header-title {
+  margin: 12px 0;
+}
+
+.header-name {
   font-optical-sizing: auto;
-  font-family: Roboto Mono, monospace;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+  padding-bottom: 8px;
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.header-position {
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
+}
+
+.header-social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.header-social-item {
+  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+  display: flex;
+}
+
+.header-social-linkedin {
+  background: #8957e51a;
+}
+
+.header-social-github {
+  background: #0a66c21a;
+}
+
+.header-social-dribbble {
+  background: #ea4c8926;
+}
+
+.social-social-icon {
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  display: flex;
 }
 
 .nav {
