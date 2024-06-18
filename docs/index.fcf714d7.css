@@ -1,11 +1,12 @@
 body {
-  font-optical-sizing: auto;
   color: #262626;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
   background: #fafafa;
   margin: 0;
-  font-family: Nunito, sans-serif;
+  font-family: Nunito Sans, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .header {
@@ -134,12 +135,15 @@ body {
 
 .project {
   color: #323335;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
   background: #efefef;
   border-radius: 8px;
   max-width: 480px;
   padding: 12px;
-  font-family: Nunito, sans-serif;
+  font-family: Nunito Sans, sans-serif;
   font-size: 16px;
+  font-style: normal;
   font-weight: 400;
 }
 

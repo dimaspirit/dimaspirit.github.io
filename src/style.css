@@ -57,12 +57,16 @@
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
   background: #FAFAFA;
   color: #262626;
+
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
 }
 
 .header {
@@ -199,8 +203,13 @@ body {
 
   font-size: 16px;
   color: #323335;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
 }
 
 .project-company {
