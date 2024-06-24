@@ -56,21 +56,29 @@
 */
 
 body {
+  min-height: 100vh;
   margin: 0;
   background: #FAFAFA;
-  color: #262626;
+  color: #404040;
+
 
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-size: 17px;
+  line-height: 23px;
   font-variation-settings:
     "wdth" 100,
     "YTLC" 500;
+  -webkit-font-smoothing: antialiased;
 }
 
 .header {
   display: flex;
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
   padding: 36px 0 48px 0;
 }
 
@@ -174,10 +182,29 @@ body {
   background: #E4E2E3;
 }
 
-.section {
+.main {
   width: 90%;
   max-width: 1120px;
-  margin: 0 auto;
+  margin: 36px auto;
+}
+
+.section {
+  margin: 0 0 36px 0;
+}
+
+.section-title {
+  margin: 0 0 24px 0;
+  color: #404040;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: .6px;
+}
+
+.section p {
+  margin: 0 0 3px 0;
 }
 
 .timeline {
