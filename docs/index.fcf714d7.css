@@ -91,7 +91,9 @@ body {
 
 .nav {
   background: #efefef;
-  padding: 12px 0;
+  padding: 8px 0;
+  position: sticky;
+  top: 0;
 }
 
 .nav-list {
@@ -107,8 +109,8 @@ body {
   color: #4b4b4b;
   border-radius: 4px;
   padding: 12px 24px;
-  font-family: Roboto Mono, monospace;
-  font-size: 18px;
+  font-family: IBM Plex Mono, monospace;
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
   transition: background-color .4s;
@@ -136,12 +138,29 @@ body {
   font-family: IBM Plex Mono, monospace;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 24px;
 }
 
 .section p {
   margin: 0 0 3px;
+}
+
+.job-title {
+  position: relative;
+}
+
+.job-title:after {
+  content: "";
+  z-index: 1;
+  background-color: #a4a4a4;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 7px;
+  left: -14px;
 }
 
 .timeline {
@@ -159,38 +178,58 @@ body {
   left: 2px;
 }
 
+.projects {
+  flex-direction: row;
+  display: flex;
+  overflow-x: auto;
+}
+
 .project {
-  color: #323335;
+  color: #404040;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100, "YTLC" 500;
   background: #efefef;
   border-radius: 8px;
-  max-width: 480px;
+  width: 40%;
+  min-width: 360px;
+  margin: 0 10px 0 0;
   padding: 12px;
   font-family: Nunito Sans, sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+.project-section {
+  margin: 24px 0 0;
+}
+
+.project-section:first-child {
+  margin-top: 0;
 }
 
 .project-company {
-  color: #4d4f51;
+  color: #525252;
+  margin: 0 0 8px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 100%;
 }
 
 .project-position {
-  color: #323335;
+  color: #404040;
+  font-family: IBM Plex Mono, monospace;
   font-size: 18px;
   font-weight: 600;
+  line-height: 100%;
 }
 
 .project-heading {
-  color: #696b6e;
+  color: #a3a3a3;
   text-transform: uppercase;
-  margin-top: 24px;
   margin-bottom: 8px;
   font-size: 14px;
   font-weight: 500;
+  line-height: 19px;
 }
 /*# sourceMappingURL=index.fcf714d7.css.map */

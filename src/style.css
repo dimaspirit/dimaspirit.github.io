@@ -153,7 +153,9 @@ body {
 }
 
 .nav {
-  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  padding: 8px 0;
   background: #EFEFEF;
 }
 
@@ -170,9 +172,9 @@ body {
   display: block;
   padding: 12px 24px;
   border-radius: 4px;
-  font-family: "Roboto Mono", monospace;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+  font-family: "IBM Plex Mono", monospace;
   color: #4B4B4B;
   text-decoration: none;
   transition: background-color .4s ease;
@@ -196,7 +198,7 @@ body {
   margin: 0 0 24px 0;
   color: #404040;
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
@@ -205,6 +207,23 @@ body {
 
 .section p {
   margin: 0 0 3px 0;
+}
+
+.job-title {
+  position: relative;
+}
+
+.job-title::after {
+  content: "";
+  background-color: #a4a4a4;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 7px;
+  left: -14px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  z-index: 1;
 }
 
 .timeline {
@@ -222,40 +241,60 @@ body {
   left: 2px;
 }
 
+.projects {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
 .project {
-  max-width: 480px;
+  width: 40%;
+  min-width: 360px;
+  margin: 0 10px 0 0;
+
   padding: 12px;
   background: #EFEFEF;
   border-radius: 8px;
 
   font-size: 16px;
-  color: #323335;
+  color: #404040;
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-variation-settings:
     "wdth" 100,
     "YTLC" 500;
 }
 
+.project-section {
+  margin: 24px 0 0 0;
+}
+.project-section:first-child {
+  margin-top: 0;
+}
+
 .project-company {
-  color: #4D4F51;
+  margin: 0 0 8px 0;
+  color: #525252;
   font-size: 18px;
-  font-weight: 500;
+  line-height: 100%;
+  font-weight: 600;
 }
 
 .project-position {
-  color: #323335;
+  color: #404040;
+  line-height: 100%;
   font-size: 18px;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
 }
 
 .project-heading {
-  margin-top: 24px;
   margin-bottom: 8px;
-  color: #696B6E;
+  color: #A3A3A3;
   font-size: 14px;
+  line-height: 19px;
   text-transform: uppercase;
   font-weight: 500;
 }
