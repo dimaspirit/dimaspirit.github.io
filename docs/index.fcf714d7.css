@@ -142,7 +142,7 @@ body {
   line-height: 24px;
 }
 
-.section p {
+.section-introduction p {
   margin: 0 0 3px;
 }
 
@@ -160,11 +160,11 @@ body {
   height: 10px;
   position: absolute;
   top: 7px;
-  left: -14px;
+  left: -17px;
 }
 
 .timeline {
-  padding: 0 0 0 12px;
+  padding: 0 0 0 15px;
   position: relative;
 }
 
@@ -176,6 +176,21 @@ body {
   top: 0;
   bottom: 0;
   left: 2px;
+}
+
+.job-title {
+  margin: 0 0 12px;
+}
+
+.job-company {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.job-time {
+  font-size: 18px;
+  line-height: 150%;
 }
 
 .projects {
@@ -220,7 +235,7 @@ body {
   color: #404040;
   font-family: IBM Plex Mono, monospace;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 100%;
 }
 
