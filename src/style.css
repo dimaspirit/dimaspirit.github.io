@@ -55,6 +55,13 @@
 } 
 */
 
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+
 body {
   min-height: 100vh;
   margin: 0;
