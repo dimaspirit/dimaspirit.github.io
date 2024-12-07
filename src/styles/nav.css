@@ -1,0 +1,31 @@
+.nav {
+  position: sticky;
+  top: 0;
+  padding: 8px 0;
+  background: #EFEFEF;
+}
+
+.nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.nav-list-item {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "IBM Plex Mono", monospace;
+  color: #4B4B4B;
+  text-decoration: none;
+  transition: background-color .4s ease;
+}
+
+.nav-list-item:hover {
+  background: #E4E2E3;
+}

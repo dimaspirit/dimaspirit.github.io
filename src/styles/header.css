@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 36px 0 48px 0;
+}
+
+.header-avatar {
+  width: 180px;
+  padding: 0 24px 0 0;
+}
+
+.header-hi {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header-title {
+  margin: 12px 0;
+}
+
+.header-name {
+  line-height: 1;
+  padding-bottom: 8px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.header-position {
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.header-social {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-social-item {
+  display: flex;
+  height: 48px;
+  width: 48px;
+  margin-right: 12px;
+  border-radius: 12px;
+}
+
+.header-social-linkedin {
+  background: rgba(137, 87, 229, 0.1);
+}
+.header-social-github {
+  background: rgba(10, 102, 194, 0.1)
+}
+.header-social-dribbble {
+  background: rgba(234, 76, 137, 0.15)
+}
+
+.social-social-icon {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  margin: auto;
+}
