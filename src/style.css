@@ -1,11 +1,11 @@
 @import "./styles/vars.css";
 @import "./styles/reset.css";
 @import "./styles/common.css";
-/* @import "./styles/header.css";
-@import "./styles/nav.css"; */
+@import "./styles/header.css";
+/* @import "./styles/nav.css"; */
 
-.main {
+/* .main {
   width: 90%;
   max-width: 1120px;
   margin: 36px auto;
-}
+} */

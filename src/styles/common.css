@@ -4,10 +4,15 @@
   }
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   min-height: 100vh;
 
   font-family: "Manrope", sans-serif;
+  font-size: 1rem;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
