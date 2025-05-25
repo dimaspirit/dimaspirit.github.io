@@ -1,0 +1,39 @@
+.section {
+  display: flex;
+  padding: 24px;
+  justify-content: center;
+}
+
+.section-inner {
+  display: grid;
+  max-width: 1200px;
+  grid-gap: var(--gutter-size);
+  grid-template-columns: repeat(12, 1fr);;
+}
+
+.section-title {
+  color: var(--color-gray900);
+  font-size: 68px;
+  line-height: 1.26;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
+  grid-column: 2 / 12;
+}
+
+.section-body {
+  line-height: 1.5;
+  grid-column: 2 / 12;
+}
+
+@media only screen and (min-width: 640px) {
+  .section-title {
+    grid-column: 3 / 10;
+  }
+
+  .section-body {
+    grid-column: 4 / 10;
+  }
+}

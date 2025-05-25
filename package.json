@@ -3,7 +3,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "build": "parcel build",
-    "dev": "parcel serve ./src/index.html --no-cache"
+    "dev": "npm run cleanup && parcel serve ./src/index.html",
+    "cleanup": "rmdir /q /s .parcel-cache dist || echo 'no cached files'"
   },
   "devDependencies": {
     "parcel": "^2.12.0",
