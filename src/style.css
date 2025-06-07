@@ -3,10 +3,16 @@
 @import "./styles/common.css";
 @import "./styles/header.css";
 @import "./styles/about.css";
-/* @import "./styles/nav.css"; */
 
-/* .main {
-  width: 90%;
-  max-width: 1120px;
-  margin: 36px auto;
-} */
+@media(prefers-reduced-motion: no-preference) {
+  body {
+    opacity: 0;
+    animation: fadeIn .8s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+  }
+}
