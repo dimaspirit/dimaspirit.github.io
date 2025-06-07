@@ -55,13 +55,16 @@
 }
 
 .header-social-linkedin {
-  background: rgba(137, 87, 229, 0.1);
+  background: rgba(10, 102, 194, 0.1);
 }
 .header-social-github {
-  background: rgba(10, 102, 194, 0.1)
+  background: rgba(137, 87, 229, 0.1);
 }
 .header-social-dribbble {
-  background: rgba(234, 76, 137, 0.15)
+  background: rgba(234, 76, 137, 0.1)
+}
+.header-social-hackerrank {
+  background: rgba(46, 200, 201, 0.1)
 }
 
 .social-social-icon {
