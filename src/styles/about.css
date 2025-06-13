@@ -8,12 +8,12 @@
   display: grid;
   max-width: 1200px;
   grid-gap: var(--gutter-size);
-  grid-template-columns: repeat(12, 1fr);;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .section-title {
   color: var(--color-gray900);
-  font-size: 68px;
+  font-size: 2.8rem;
   line-height: 1.26;
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
@@ -30,7 +30,8 @@
 
 @media only screen and (min-width: 640px) {
   .section-title {
-    grid-column: 3 / 10;
+    grid-column: 3 / 12;
+    font-size: 4.2rem;
   }
 
   .section-body {

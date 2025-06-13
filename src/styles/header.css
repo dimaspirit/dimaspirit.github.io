@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  padding: 36px 0;
+  padding: 36px 36px;
   text-align: center;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .header-body {
-  flex-basis: 28rem;
+  flex-basis: 26rem;
 }
 
 .header-social {
