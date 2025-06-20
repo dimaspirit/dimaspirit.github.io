@@ -42,6 +42,7 @@
 }
 
 .header-social {
+  position: relative;
   display: flex;
   gap: .75rem;
   justify-content: center;
@@ -50,11 +51,12 @@
 }
 
 .header-social-item {
+  position: relative;
   display: flex;
   height: 48px;
   width: 48px;
   border-radius: 12px;
-  transition: all .4s ease-in-out;
+  transition: background-color .4s ease-in-out;
 }
 
 .header-social-linkedin {
@@ -95,6 +97,36 @@
 
 .header-social-item:hover .social-social-icon {
   transform: scale(1.1);
+}
+
+@keyframes blink-me {
+  0% {
+    opacity: .7;
+    transform: scale(.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.header-social-item-notification {
+  width: 12px;
+  height: 12px;
+  background: #005E93;
+  border-radius: 6px;
+  position: absolute;
+  top: -2px;
+  right: -3px;
+}
+
+@media(prefers-reduced-motion: no-preference) {
+  .header-social-item-notification {
+    animation: blink-me 800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
 }
 
 @media only screen and (min-width: 640px) {
