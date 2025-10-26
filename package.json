@@ -7,10 +7,10 @@
     "cleanup": "rmdir /q /s .parcel-cache dist || echo 'no cached files'"
   },
   "devDependencies": {
-    "parcel": "^2.12.0",
+    "parcel": "^2.16.0",
     "posthtml-include": "^2.0.1"
   },
   "dependencies": {
-    "caniuse-lite": "^1.0.30001718"
+    "caniuse-lite": "^1.0.30001751"
   }
 }
