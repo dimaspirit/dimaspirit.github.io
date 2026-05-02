@@ -1,13 +1,17 @@
 {
-  "source": "src/index.html",
+  "type": "module",
   "browserslist": "> 0.5%, last 2 versions, not dead",
+  "engines": {
+    "node": ">=24.11.0"
+  },
   "scripts": {
-    "build": "parcel build",
-    "dev": "npm run cleanup && parcel serve ./src/index.html",
-    "cleanup": "rmdir /q /s .parcel-cache dist || echo 'no cached files'"
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "parcel": "^2.16.0",
-    "posthtml-include": "^2.0.1"
+    "posthtml": "^0.16.7",
+    "posthtml-include": "^2.0.1",
+    "vite": "^8.0.10"
   }
 }

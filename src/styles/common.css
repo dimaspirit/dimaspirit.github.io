@@ -1,11 +1,11 @@
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   * {
     scroll-behavior: smooth;
   }
-}
+} */
 
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
