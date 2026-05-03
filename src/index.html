@@ -33,17 +33,25 @@
     <main>
       <include src="./partials/about.html"></include>
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="section-inner">
           <h3 class="section-title">Certs</h3>
-  
           <div class="section-body full-width">
+            <certificate-list id="certList"></certificate-list>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- Web Components -->
-    <script type="module" src="./components/certificate-list.js"></script>
+    <script type="module">
+      import './components/certificate-list.js';
+      import { certificatesData } from './data/certificates.js';
+      window.addEventListener('DOMContentLoaded', () => {
+        const certList = document.getElementById('certList');
+        if (certList && typeof certList.setData === 'function') {
+          certList.setData(certificatesData);
+        }
+      });
+    </script>
   </body>
 </html>
